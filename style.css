@@ -1,0 +1,100 @@
+body {
+  background-color: #000;
+  background-image: url('./star-3.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  
+}
+.card {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.buttons button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #2980b9;
+}
+@keyframes twinkle {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+body:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-image: url('./STAR-1.jpg');
+  animation: twinkle 3s infinite;
+}
+
+.razibimg {
+  height: 70px;
+  width: 70px;
+  padding: -5px;
+  margin-right: 15px;
+}
+.razibimgX:hover {
+  background: rgb(10, 142, 23);
+}
+.hover-x:hover{
+  transform: translateY(-5px);
+box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 767px) {
+  .razibimg {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+   
+  }
+  .razibimgXX {
+    text-align: center;
+  }
+  .headerinfo {
+    margin: auto;
+    border: solid blue 2px;
+    padding-left: 50px;
+    
+  }
+  .delet{
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+body {
+    background-color: #000;
+    background-image: url('./cal-2.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+  
+  @keyframes twinkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
+  body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    background-image: url('./cal-1.jpg');
+    animation: twinkle 5s infinite;
+  }
